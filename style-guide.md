@@ -32,6 +32,4 @@ The designs were created to the following widths:
 - Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
 - Weights: 600, 700
 
-
-
 rock paper scissors spock lizard

@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-chrome": "chrome",
+    "pwa-node": "node"
+  }
 }
