@@ -1,0 +1,2135 @@
+/* @import url();
+@import url(); */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap");
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 768px;
+  position: absolute;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 100%,
+    #131537 100%
+  );
+  /* background-color: #1F3757; */
+  background-color: #131537;
+}
+button {
+  cursor: pointer;
+}
+/* #div-logoBonus {
+    border: solid 2px #babfd4;
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    left: 333px;
+    top: 48px;
+} */
+#logoBonus {
+  position: absolute;
+  margin-left: 32.92px;
+  margin-top: 22.18px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#divLogo-container {
+  position: absolute;
+  border-radius: 15px;
+  border: solid 2px #babfd4;
+  width: 700px;
+  height: 150px;
+  left: 333px;
+  top: 48px;
+}
+#scorebox {
+  position: absolute;
+  background-color: #ffffff;
+  width: 150px;
+  height: 114px;
+  left: 526px;
+  top: 18px;
+  border-radius: 10px;
+}
+#scorename {
+  position: absolute;
+  height: 19px;
+  left: 30%;
+  top: calc(50% - 19px / 2 - 32px);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #2a45c2;
+  height: 19px;
+  width: 53px;
+  border-radius: nullpx;
+}
+#scorepoint {
+  position: absolute;
+  height: 64px;
+  left: 2.73%;
+  right: 0.91%;
+  top: calc(50% - 64px / 2 + 9.5px);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #565468;
+}
+#pentagon {
+  box-sizing: border-box;
+  position: absolute;
+  width: 345px;
+  height: 345px;
+  left: 511px;
+  top: 318px;
+}
+
+/* design for scissors */
+#orangeCircle,
+#yellowCircle,
+#ashCircle,
+#whiteCircle {
+  border-radius: 50%;
+}
+#orangeCircle {
+  position: absolute;
+  width: 145px;
+  height: 148px;
+  left: 611px;
+  top: 246px;
+  background: #c76c1b;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#yellowCircle {
+  position: absolute;
+  width: 145px;
+  height: 141.44px;
+  left: 611px;
+  top: 246px;
+  background: #eb9f0e;
+}
+#ashCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 110.82px;
+  left: 627.84px;
+  top: 262.77px;
+  background: #babfd4;
+}
+#whiteCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 104.99px;
+  left: 627.84px;
+  top: 268.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+}
+.scissor {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 323.35px;
+  top: 141.1px;
+}
+/* #scissor:hover {
+    position: absolute;
+    width: 39.52px;
+    height: 58.48px;
+    left: 690.21px;
+    top: 286.45px;
+    background: #3B4262;
+    transform: rotate(45deg);
+} */
+
+/* design for paper */
+#deepBlueCircle,
+#midBlueCircle,
+#ashpaperCircle,
+#whitepaperCircle {
+  border-radius: 50%;
+}
+#deepBlueCircle {
+  position: absolute;
+  width: 145px;
+  height: 148px;
+  left: 774px;
+  top: 375px;
+  background: #2a45c2;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#midBlueCircle {
+  position: absolute;
+  width: 145px;
+  height: 141.44px;
+  left: 774px;
+  top: 375px;
+  background: #4664f4;
+}
+#ashpaperCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 110.82px;
+  left: 790.84px;
+  top: 391.77px;
+  background: #babfd4;
+}
+#whitepaperCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 104.99px;
+  left: 790.84px;
+  top: 397.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+}
+.paper {
+  position: absolute;
+  width: 54px;
+  height: 63px;
+  left: 407.4px;
+  top: 207.74px;
+}
+
+/* design for rock */
+#deepRedCircle,
+#middleRedCircle,
+#ashRockCircle,
+#whiteRockCircle {
+  border-radius: 50%;
+}
+#deepRedCircle {
+  position: absolute;
+  width: 145px;
+  height: 148px;
+  left: 709px;
+  top: 561px;
+  background: #9d1634;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#middleRedCircle {
+  position: absolute;
+  width: 145px;
+  height: 141.44px;
+  left: 709px;
+  top: 561px;
+  background: #db2e4d;
+}
+#ashRockCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 110.82px;
+  left: 725.84px;
+  top: 577.77px;
+  background: #babfd4;
+}
+#whiteRockCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 104.99px;
+  left: 725.84px;
+  top: 583.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+}
+.Rock {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 375.67px;
+  top: 304.39px;
+}
+
+/* design for lizard */
+#deepVoiletCircle,
+#lightVioletCircle,
+#ashLizardCircle,
+#whiteLizardCircle {
+  border-radius: 50%;
+}
+#deepVoiletCircle {
+  position: absolute;
+  width: 145px;
+  height: 148px;
+  left: 512px;
+  top: 561px;
+  background: #5f37a8;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#lightVioletCircle {
+  position: absolute;
+  width: 145px;
+  height: 141.44px;
+  left: 512px;
+  top: 561px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0966455) 0%,
+    rgba(255, 255, 255, 0.0001) 100%
+  );
+}
+#ashLizardCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 110.82px;
+  left: 528.84px;
+  top: 577.77px;
+  background: #babfd4;
+}
+#whiteLizardCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 104.99px;
+  left: 528.84px;
+  top: 583.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+}
+.Lizard {
+  position: absolute;
+  width: 61.52px;
+  height: 59.78px;
+  left: 276.74px;
+  top: 300.2px;
+}
+
+/* design for spock */
+#deepSeaCircle,
+#middleSeaCircle,
+#ashSpockCircle,
+#whiteSpockCircle {
+  border-radius: 50%;
+}
+#deepSeaCircle {
+  position: absolute;
+  width: 145px;
+  height: 148px;
+  left: 447px;
+  top: 375px;
+  background: #2d8dab;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#middleSeaCircle {
+  position: absolute;
+  width: 145px;
+  height: 141.44px;
+  left: 447px;
+  top: 375px;
+  background: #3fb7cd;
+}
+#ashSpockCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 110.82px;
+  left: 463.84px;
+  top: 391.77px;
+  background: #babfd4;
+}
+#whiteSpockCircle {
+  position: absolute;
+  width: 111.31px;
+  height: 104.99px;
+  left: 463.84px;
+  top: 397.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+}
+.Spock {
+  position: absolute;
+  width: 44px;
+  height: 59px;
+  left: 249.46px;
+  top: 209.47px;
+}
+
+/* rules display and opacity */
+#section2 {
+  display: block;
+}
+#div-rules-button {
+  position: absolute;
+  width: 128px;
+  height: 40px;
+  left: 1206px;
+  top: 696px;
+  border: solid 1px #ffffff;
+  border-radius: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  background-color: #131537;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 100;
+}
+#div-rules-display {
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  top: 154px;
+  left: 517px;
+  display: none;
+  height: 420px;
+  z-index: 300;
+}
+#div-rules-textAndCloseButton {
+  display: flex;
+}
+#closeButton {
+  object-fit: contain;
+  position: absolute;
+  left: 87.25%;
+  right: 7.98%;
+  top: 5.24%;
+  bottom: 87.62%;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  cursor: pointer;
+}
+#textrules {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px; /* identical to box height */
+  color: #3b4262;
+  margin: 15px 0px 0px 25px;
+}
+#moDal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  mix-blend-mode: normal;
+}
+#chooseAgame {
+  display: none;
+}
+#ipickAndTheSystemPickSection {
+  display: none;
+}
+#divForyoupickedText,
+#divFortheHousePickedText {
+  display: flex;
+  flex-direction: column;
+}
+#divForyoupickedText {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 350px;
+  top: 270px;
+}
+@keyframes ipick {
+  0% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 350px;
+    top: 270px;
+  }
+  25% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 350px;
+    top: 270px;
+  }
+  50% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 350px;
+    top: 270px;
+  }
+  75% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 350px;
+    top: 270px;
+  }
+  100% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 250px;
+    top: 270px;
+  }
+}
+#divFortheHousePickedText {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 711px;
+  top: 270px;
+}
+@keyframes syspick {
+  0% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 711px;
+    top: 270px;
+  }
+  25% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 711px;
+    top: 270px;
+  }
+  50% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 711px;
+    top: 270px;
+  }
+  75% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 711px;
+    top: 270px;
+  }
+  100% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 860px;
+    top: 270px;
+  }
+}
+#youPickedText,
+#theHousePickedText {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: -10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 32px; /* identical to box height */
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#iPickedCircle,
+#theHousePickedCircle {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  width: 224.63px;
+  height: 224.63px;
+  position: absolute;
+  left: 30px;
+  top: 130px;
+}
+#cover {
+  background: #131537;
+  z-index: 1;
+  width: 20px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#scissorappear,
+#paperappear,
+#rockappear,
+#lizardappear,
+#spockappear {
+  display: none;
+}
+
+/* design display after buttons are clicked */
+#orangeOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 300px;
+  left: 350px;
+  top: 385px;
+  background: #c76c1b;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 50%;
+  z-index: 1;
+}
+#yellowOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 286.7px;
+  left: 349px;
+  top: 385px;
+  background: #eb9f0e;
+  border-radius: 50%;
+  z-index: 2;
+}
+#ashOtherCircle {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 381.99px;
+  top: 418.99px;
+  background: #babfd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+#whiteOtherCircle {
+  position: absolute;
+  width: 225px;
+  height: 213px;
+  left: 380.84px;
+  top: 430.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  z-index: 4;
+}
+#scissorOther {
+  position: absolute;
+  width: 79.9px;
+  height: 118.23px;
+  left: 466.35px;
+  top: 496.1px;
+  z-index: 5;
+}
+/* #scissorOtherImage {
+    width: 79.9px;
+    height: 118.23px;
+} */
+
+#deepBlueOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 300px;
+  left: 350px;
+  top: 385px;
+  background: #2a45c2;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 50%;
+  z-index: 1;
+}
+#midBlueOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 286.7px;
+  left: 349px;
+  top: 385px;
+  background: #4664f4;
+  border-radius: 50%;
+  z-index: 2;
+}
+#ashpaperOtherCircle {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 381.99px;
+  top: 418.99px;
+  background: #babfd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+#whitepaperOtherCircle {
+  position: absolute;
+  width: 225px;
+  height: 213px;
+  left: 380.84px;
+  top: 430.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  z-index: 4;
+}
+#paperOther {
+  position: absolute;
+  width: 79.9px;
+  height: 118.23px;
+  left: 466.35px;
+  top: 496.1px;
+  z-index: 5;
+}
+/* #paperOtherImage {
+
+} */
+
+#deepRedOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 300px;
+  left: 350px;
+  top: 385px;
+  background: #9d1634;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 50%;
+  z-index: 1;
+}
+#middleRedOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 286.7px;
+  left: 349px;
+  top: 385px;
+  background: #db2e4d;
+  border-radius: 50%;
+  z-index: 2;
+}
+#ashRockOtherCircle {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 381.99px;
+  top: 418.99px;
+  background: #babfd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+#whiteRockOtherCircle {
+  position: absolute;
+  width: 225px;
+  height: 213px;
+  left: 380.84px;
+  top: 430.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  z-index: 4;
+}
+#RockOther {
+  position: absolute;
+  width: 79.9px;
+  height: 118.23px;
+  left: 466.35px;
+  top: 496.1px;
+  z-index: 5;
+}
+/* #rockOtherImages {
+
+} */
+
+#deepVoiletOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 300px;
+  left: 350px;
+  top: 385px;
+  background: #5f37a8;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 50%;
+  z-index: 1;
+}
+#lightVioletOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 286.7px;
+  left: 349px;
+  top: 385px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0966455) 0%,
+    rgba(255, 255, 255, 0.0001) 100%
+  );
+  border-radius: 50%;
+  z-index: 2;
+}
+#ashLizardOtherCircle {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 381.99px;
+  top: 418.99px;
+  background: #babfd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+#whiteLizardOtherCircle {
+  position: absolute;
+  width: 225px;
+  height: 213px;
+  left: 380.84px;
+  top: 430.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  z-index: 4;
+}
+#LizardOther {
+  position: absolute;
+  width: 79.9px;
+  height: 118.23px;
+  left: 466.35px;
+  top: 496.1px;
+  z-index: 5;
+}
+/* #lizardOtherImage {
+
+} */
+
+#deepSeaOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 300px;
+  left: 350px;
+  top: 385px;
+  background: #2d8dab;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 50%;
+  z-index: 1;
+}
+#middleSeaOtherCircle {
+  position: absolute;
+  width: 292.61px;
+  height: 286.7px;
+  left: 349px;
+  top: 385px;
+  background: #3fb7cd;
+  border-radius: 50%;
+  z-index: 2;
+}
+#ashSpockOtherCircle {
+  position: absolute;
+  width: 224.63px;
+  height: 224.63px;
+  left: 381.99px;
+  top: 418.99px;
+  background: #babfd4;
+  border-radius: 50%;
+  z-index: 3;
+}
+#whiteSpockOtherCircle {
+  position: absolute;
+  width: 225px;
+  height: 213px;
+  left: 380.84px;
+  top: 430.6px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  border-radius: 50%;
+  z-index: 4;
+}
+#SpockOther {
+  position: absolute;
+  width: 79.9px;
+  height: 118.23px;
+  left: 466.35px;
+  top: 496.1px;
+  z-index: 5;
+}
+/* #spockOtherImage {
+
+} */
+#divForLoser,
+#divForWinner {
+  display: none;
+  width: 220px;
+  height: 131px;
+  position: absolute;
+  left: 573px;
+  top: 530px;
+  z-index: 190;
+}
+#youLose,
+#youWin {
+  position: absolute;
+  height: 67px;
+  left: 0.45%;
+  right: 0.45%;
+  top: -80px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 67px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+#loseButtonLike,
+#winButtonLike {
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  border: none;
+  width: 220px;
+  height: 48px;
+  display: table;
+}
+.playAgainL,
+.playAgainW {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 220px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  color: #3b4262;
+  cursor: pointer;
+  z-index: 201;
+}
+#divForOvals {
+  display: none;
+  width: 730px;
+  height: 718px;
+  position: absolute;
+  left: 660px;
+  top: 174.35px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  z-index: 1;
+}
+#ovalOne {
+  position: absolute;
+  width: 730px;
+  height: 718px;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.05;
+  border-radius: 50%;
+}
+#ovalTwo {
+  position: absolute;
+  width: 564px;
+  height: 554px;
+  left: 80px;
+  top: 83px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.05;
+  border-radius: 50%;
+}
+#ovalThree {
+  position: absolute;
+  width: 424px;
+  height: 416px;
+  left: 145px;
+  top: 150px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.05;
+  border-radius: 50%;
+}
+#greaterDivForRestartButtonandText,
+#greaterDivForCongratulationsButtonandText,
+#greaterDivForDrawButtonandText {
+  display: none;
+}
+#divForRestartGame,
+#divForCongratGame,
+#divForDrawGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+}
+#divForDrawGame {
+  top: 370px;
+  left: 195px;
+}
+#textIfYouLose,
+#textIfYouWin,
+#textIfYouDraw {
+  font-size: 50px;
+  color: #ffffff;
+}
+#restartGame,
+#CongratGAme,
+#DrawGAme {
+  width: 220px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  font-size: 35px;
+  color: #1f3757;
+}
+/* some animations for appearances 😉*/
+
+@keyframes drawGamePlay {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#divForyoupickedText,
+#divFortheHousePickedText {
+  animation-name: animi;
+  animation-duration: 0.2s;
+  animation-delay: 0s;
+}
+@keyframes animi {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* #divFortheHousePickedText {
+    animation-name: animz;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes animz {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+} */
+
+#scissorappear,
+#paperappear,
+#rockappear,
+#lizardappear,
+#spockappear {
+  animation-name: anima;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+@keyframes anima {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#divForLoser,
+#divForWinner {
+  animation-name: animy;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+@keyframes animy {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#divForOvals {
+  animation-name: ovals;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  /* animation-iteration-count: infinite;  */
+}
+@keyframes ovals {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scissor {
+  0% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: -150px;
+    top: 0px;
+  }
+}
+
+@keyframes sysscissorchoice {
+  0% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 340px;
+    /* top: 0px;  */
+    opacity: 0;
+  }
+  25% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 340px;
+    /* top: 0px;  */
+    opacity: 0;
+  }
+  50% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 340px;
+    /* top: 0px;  */
+  }
+  75% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 340px;
+    /* top: 0px;  */
+  }
+  100% {
+    position: absolute;
+    width: 224.63px;
+    height: 224.63px;
+    left: 500px;
+    /* top: 0px; */
+  }
+}
+/* #iPickedCircle, #theHousePickedCircle {
+    animation-name: appearCircle;
+    animation-duration: 0.2s;
+    animation-delay: 0s; 
+}
+@keyframes appearCircle {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} */
+
+/* Media Query for mobile phone */
+@media (max-width: 375px) {
+  body {
+    position: absolute;
+    width: 375px;
+    height: 750px;
+    left: 0px;
+    top: 0px;
+    overflow-x: hidden;
+  }
+  #divLogo-container {
+    position: absolute;
+    border-radius: 15px;
+    border: solid 2px #babfd4;
+    width: 311px;
+    height: 96px;
+    left: 31px;
+    top: 32px;
+    z-index: 100;
+  }
+  #logoBonus {
+    position: absolute;
+    width: 49px;
+    height: 48px;
+    left: -15px;
+    top: 0px;
+  }
+  #scorebox {
+    position: absolute;
+    width: 80px;
+    height: 72px;
+    left: 220px;
+    top: 10px;
+  }
+  #scorename {
+    position: absolute;
+    height: 12px;
+    left: 14px;
+    top: calc(50% - 12px / 2 - 20px);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1.5625px;
+    color: #2a45c2;
+  }
+  #scorepoint {
+    position: absolute;
+    height: 40px;
+    left: 2.86%;
+    right: 2.86%;
+    top: calc(50% - 40px / 2 + 6px);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #565468;
+  }
+  #section2 {
+    display: block; /*later change it ==================================================================*/
+  }
+  #pentagon {
+    box-sizing: border-box;
+    position: absolute;
+    width: 227px;
+    height: 227px;
+    left: 60px;
+    top: 250px;
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+
+  #divPaperAppear,
+  #divScissorAppear,
+  #divSpockAppear,
+  #divRockAppear,
+  #divLizardAppear {
+    width: 0px;
+    border: solid 1px #000000;
+  }
+
+  /* scissor button */
+  #orangeCircle,
+  #yellowCircle,
+  #ashCircle,
+  #whiteCircle {
+    border-radius: 50%;
+  }
+  #orangeCircle {
+    position: absolute;
+    width: 96px;
+    height: 97px;
+    left: 130px;
+    top: 223px;
+    background: #c76c1b;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #yellowCircle {
+    position: absolute;
+    width: 96px;
+    height: 92.7px;
+    left: 130px;
+    top: 223px;
+    background: #eb9f0e;
+  }
+  #ashCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 72.63px;
+    left: 141.15px;
+    top: 233.99px;
+    background: #babfd4;
+  }
+  #whiteCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 68.81px;
+    left: 141.15px;
+    top: 237.81px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  }
+  .scissor {
+    position: absolute;
+    width: 27px;
+    height: 36px;
+    left: 82.73px;
+    top: 125.28px;
+  }
+
+  /* hand button */
+  #deepBlueCircle,
+  #midBlueCircle,
+  #ashpaperCircle,
+  #whitepaperCircle {
+    border-radius: 50%;
+  }
+  #deepBlueCircle {
+    position: absolute;
+    width: 96px;
+    height: 97px;
+    left: 237px;
+    top: 308px;
+    background: #2a45c2;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #midBlueCircle {
+    position: absolute;
+    width: 96px;
+    height: 92.7px;
+    left: 237px;
+    top: 308px;
+    background: #4664f4;
+  }
+  #ashpaperCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 72.63px;
+    left: 248.15px;
+    top: 318.99px;
+    background: #babfd4;
+  }
+  #whitepaperCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 68.81px;
+    left: 248.15px;
+    top: 322.81px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  }
+  .paper {
+    position: absolute;
+    width: 27px;
+    height: 36px;
+    left: 135.06px;
+    top: 170.67px;
+  }
+
+  /* rock button */
+  #deepRedCircle,
+  #middleRedCircle,
+  #ashRockCircle,
+  #whiteRockCircle {
+    border-radius: 50%;
+  }
+  #deepRedCircle {
+    position: absolute;
+    width: 96px;
+    height: 97px;
+    left: 204px;
+    top: 431px;
+    background: #9d1634;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #middleRedCircle {
+    position: absolute;
+    width: 96px;
+    height: 92.7px;
+    left: 204px;
+    top: 431px;
+    background: #db2e4d;
+  }
+  #ashRockCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 72.63px;
+    left: 215.15px;
+    top: 441.99px;
+    background: #babfd4;
+  }
+  #whiteRockCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 68.81px;
+    left: 215.15px;
+    top: 445.81px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  }
+  .Rock {
+    position: absolute;
+    width: 27px;
+    height: 36px;
+    left: 118.58px;
+    top: 230.06px;
+  }
+
+  /* lizard button */
+  #deepVoiletCircle,
+  #lightVioletCircle,
+  #ashLizardCircle,
+  #whiteLizardCircle {
+    border-radius: 50%;
+  }
+  #deepVoiletCircle {
+    position: absolute;
+    width: 96px;
+    height: 97px;
+    left: 55px;
+    top: 431px;
+    background: #5f37a8;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #lightVioletCircle {
+    position: absolute;
+    width: 96px;
+    height: 92.7px;
+    left: 55px;
+    top: 431px;
+    background: #834ee3;
+  }
+  #ashLizardCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 72.63px;
+    left: 66.15px;
+    top: 441.99px;
+    background: #babfd4;
+  }
+  #whiteLizardCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 68.81px;
+    left: 66.15px;
+    top: 445.81px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  }
+  .Lizard {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    left: 42.64px;
+    top: 229.63px;
+  }
+
+  /* spock button */
+  #deepSeaCircle,
+  #middleSeaCircle,
+  #ashSpockCircle,
+  #whiteSpockCircle {
+    border-radius: 50%;
+  }
+  #deepSeaCircle {
+    position: absolute;
+    width: 96px;
+    height: 97px;
+    left: 16px;
+    top: 308px;
+    background: #2d8dab;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #middleSeaCircle {
+    position: absolute;
+    width: 96px;
+    height: 92.7px;
+    left: 16px;
+    top: 308px;
+    background: #3fb7cd;
+  }
+  #ashSpockCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 72.63px;
+    left: 27.15px;
+    top: 318.99px;
+    background: #babfd4;
+  }
+  #whiteSpockCircle {
+    position: absolute;
+    width: 73.7px;
+    height: 68.81px;
+    left: 27.15px;
+    top: 322.81px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+  }
+  .Spock {
+    position: absolute;
+    width: 27px;
+    height: 36px;
+    left: 25.39px;
+    top: 168.15px;
+  }
+
+  /* rules button */
+  #div-rules-button {
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    left: 124px;
+    top: 654px;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+  }
+  #div-rules-display {
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    display: none;
+    height: 420px;
+    z-index: 300;
+    width: 375px;
+    height: 750px;
+    left: 0px;
+    top: 0px;
+  }
+  #textrules {
+    position: absolute;
+    width: 85px;
+    height: 32px;
+    left: 105px;
+    top: 95px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3b4262;
+  }
+  #image-rules-bonus-itself {
+    position: absolute;
+    width: 311px;
+    height: 305px;
+    left: 20px;
+    top: 223px;
+  }
+  #closeButton {
+    position: absolute;
+    width: 19.09px;
+    height: 19.09px;
+    left: 178px;
+    top: 665px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    cursor: pointer;
+  }
+
+  /* display image after button click */
+
+  /* you pick text and empty circle */
+  #ipickAndTheSystemPickSection {
+    display: block;
+    max-width: 200px;
+    width: 190px;
+  }
+  #youPickedText {
+    position: absolute;
+    width: 150px;
+    height: 32px;
+    left: -200px;
+    top: 370px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1.875px;
+    color: #ffffff;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #iPickedCircle {
+    position: absolute;
+    left: -150px;
+    top: 250px;
+    bottom: 37%;
+    width: 110px;
+    height: 110px;
+  }
+  #divForyoupickedText {
+    position: absolute;
+    width: 50px;
+    height: 182px;
+    left: 0px;
+    top: 0px;
+  }
+  #theHousePickedText {
+    position: absolute;
+    width: 190px;
+    height: 32px;
+    left: -690px;
+    top: 370px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1.875px;
+    color: #ffffff;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  }
+  #theHousePickedCircle {
+    position: absolute;
+    left: -630px;
+    top: 250px;
+    bottom: 37%;
+    width: 110px;
+    height: 110px;
+  }
+  #divFortheHousePickedText {
+    position: absolute;
+    width: 50px;
+    height: 182px;
+    left: 200px;
+    top: 0px;
+  }
+
+  #scissorappear,
+  #paperappear,
+  #rockappear,
+  #lizardappear,
+  #spockappear {
+    display: none;
+  }
+
+  /*scissordisplay*/
+  #orangeOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 133px;
+    left: 28px;
+    top: 238px;
+    background: #c76c1b;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #yellowOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 127.1px;
+    left: 28px;
+    top: 238px;
+    background: #eb9f0e;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #ashOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 99.59px;
+    left: 42px;
+    top: 252px;
+    background: #babfd4;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #whiteOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 94.34px;
+    left: 42px;
+    top: 257px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  #scissorOther {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 63.48px;
+    top: 275px;
+    z-index: 5;
+  }
+
+  /* paperdisplay */
+  #deepBlueOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 133px;
+    left: 28px;
+    top: 238px;
+    background: #2a45c2;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #midBlueOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 127.1px;
+    left: 28px;
+    top: 238px;
+    background: #4664f4;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #ashpaperOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 99.59px;
+    left: 42px;
+    top: 252px;
+    background: #babfd4;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #whitepaperOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 94.34px;
+    left: 42px;
+    top: 257px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  #paperOther {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 63.48px;
+    top: 275px;
+    z-index: 5;
+  }
+
+  /* rockdisplay */
+  #deepRedOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 133px;
+    left: 28px;
+    top: 238px;
+    background: #9d1634;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #middleRedOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 127.1px;
+    left: 28px;
+    top: 238px;
+    background: #db2e4d;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #ashRockOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 99.59px;
+    left: 42px;
+    top: 252px;
+    background: #babfd4;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #whiteRockOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 94.34px;
+    left: 42px;
+    top: 257px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  #RockOther {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 63.48px;
+    top: 275px;
+    z-index: 5;
+  }
+
+  /* lizarddisplay */
+  #deepVoiletOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 133px;
+    left: 28px;
+    top: 238px;
+    background: #5f37a8;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #lightVioletOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 127.1px;
+    left: 28px;
+    top: 238px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.0966455) 0%,
+      rgba(255, 255, 255, 0.0001) 100%
+    );
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #ashLizardOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 99.59px;
+    left: 42px;
+    top: 252px;
+    background: #babfd4;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #whiteLizardOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 94.34px;
+    left: 42px;
+    top: 257px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  #LizardOther {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 63.48px;
+    top: 275px;
+    z-index: 5;
+  }
+
+  /* spockdisplay */
+  #deepSeaOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 133px;
+    left: 28px;
+    top: 238px;
+    background: #2d8dab;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #middleSeaOtherCircle {
+    position: absolute;
+    width: 130px;
+    height: 127.1px;
+    left: 28px;
+    top: 238px;
+    background: #3fb7cd;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  #ashSpockOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 99.59px;
+    left: 42px;
+    top: 252px;
+    background: #babfd4;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  #whiteSpockOtherCircle {
+    position: absolute;
+    width: 99.8px;
+    height: 94.34px;
+    left: 42px;
+    top: 257px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    border-radius: 50%;
+    z-index: 4;
+  }
+  #SpockOther {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 70.48px;
+    top: 275px;
+    z-index: 5;
+  }
+
+  /* stop all animations */
+  @keyframes ipick {
+    0% {
+      position: absolute;
+    }
+    100% {
+      position: absolute;
+    }
+  }
+
+  @keyframes syspick {
+    0% {
+      position: absolute;
+    }
+    100% {
+      position: absolute;
+    }
+  }
+
+  @keyframes drawGamePlay {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animi {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #scissorappear,
+  #paperappear,
+  #rockappear,
+  #lizardappear,
+  #spockappear {
+    animation-name: anima;
+    animation-duration: 0s;
+    animation-delay: 0s;
+  }
+  @keyframes anima {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animy {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ovals {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* #scissorappear, #rockappear, #paperappear, #spockappear, #lizardappear {
+        animation-iteration-count: infinite;
+    } */
+
+  @keyframes scissor {
+    0% {
+      position: absolute;
+      left: 0px;
+    }
+    100% {
+      position: absolute;
+      left: 0px;
+    }
+  }
+
+  @keyframes sysscissorchoice {
+    0% {
+      position: absolute;
+      left: 200px;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      position: absolute;
+      left: 200px;
+      opacity: 1;
+    }
+  }
+
+  /* #divForyoupickedText, #divFortheHousePickedText {
+        animation-name: animi;
+        animation-duration: 0s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    } */
+
+  #divForLoser,
+  #divForWinner {
+    display: none;
+    width: 220px;
+    height: 131px;
+    position: absolute;
+    left: 78px;
+    top: 530px;
+    z-index: 190;
+  }
+
+  #divForOvals {
+    display: none;
+    position: absolute;
+    width: 288px;
+    height: 284px;
+    left: -50px;
+    top: 152px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  #ovalOne {
+    position: absolute;
+    width: 288px;
+    height: 284px;
+    left: -50px;
+    top: 12px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 50%;
+  }
+  #ovalTwo {
+    position: absolute;
+    width: 223px;
+    height: 219px;
+    left: -17px;
+    top: 45px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 50%;
+  }
+  #ovalThree {
+    position: absolute;
+    width: 167px;
+    height: 164px;
+    left: 11px;
+    top: 70px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 50%;
+  }
+
+  #greaterDivForRestartButtonandText,
+  #greaterDivForDrawButtonandText,
+  #greaterDivForCongratulationsButtonandText {
+    display: none;
+  }
+
+  #divForRestartGame,
+  #divForCongratGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+  }
+  #divForDrawGame {
+    position: absolute;
+    left: 85px;
+    top: 250px;
+  }
+
+  #textIfYouDraw {
+    position: absolute;
+    top: -130px;
+    left: 65px;
+  }
+  #DrawGAme {
+    position: absolute;
+    top: 250px;
+    left: 1px;
+  }
+}
