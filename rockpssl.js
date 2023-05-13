@@ -18,7 +18,7 @@ const game = () => {
   });
 
   // When any part of the modal is clicked the page should go back to default
-  window.onclick = function (event) {
+  this["onclick"] = function (event) {
     if (event.target === modalDisplay) {
       modalDisplay.style.display = "none";
       modal.style.display = "none";
@@ -38,6 +38,22 @@ const game = () => {
 
   //user choices
   const scissorclicke = document.getElementById("scissorButton");
+  const ipicksyspick = () => {
+    ipickSec.style.display = "block";
+    ipickSec.style.position = "absolute";
+    ipickSec.style.left = "200px";
+    ipickSec.style.animationName = "ipick";
+    ipickSec.style.animationDelay = "0s";
+    ipickSec.style.animationDuration = "4s";
+
+    syspickSec.style.display = "block";
+    syspickSec.style.position = "absolute";
+    syspickSec.style.left = "860px";
+    syspickSec.style.animationName = "syspick";
+    syspickSec.style.animationDelay = "0s";
+    syspickSec.style.animationDuration = "4s";
+  };
+
   scissorclicke.addEventListener("click", function () {
     sec2.style.display = "none";
     appear.style.display = "block";
@@ -56,19 +72,7 @@ const game = () => {
 
     updateScore();
 
-    ipickSec.style.display = "block";
-    ipickSec.style.position = "absolute";
-    ipickSec.style.left = "200px";
-    ipickSec.style.animationName = "ipick";
-    ipickSec.style.animationDelay = "0s";
-    ipickSec.style.animationDuration = "4s";
-
-    syspickSec.style.display = "block";
-    syspickSec.style.position = "absolute";
-    syspickSec.style.left = "860px";
-    syspickSec.style.animationName = "syspick";
-    syspickSec.style.animationDelay = "0s";
-    syspickSec.style.animationDuration = "4s";
+    ipicksyspick();
   });
 
   const paperclicke = document.getElementById("paperButton");
@@ -90,19 +94,7 @@ const game = () => {
 
     updateScore();
 
-    ipickSec.style.display = "block";
-    ipickSec.style.position = "absolute";
-    ipickSec.style.left = "200px";
-    ipickSec.style.animationName = "ipick";
-    ipickSec.style.animationDelay = "0s";
-    ipickSec.style.animationDuration = "4s";
-
-    syspickSec.style.display = "block";
-    syspickSec.style.position = "absolute";
-    syspickSec.style.left = "860px";
-    syspickSec.style.animationName = "syspick";
-    syspickSec.style.animationDelay = "0s";
-    syspickSec.style.animationDuration = "4s";
+    ipicksyspick();
   });
 
   const rockclicke = document.getElementById("rockButton");
@@ -124,19 +116,7 @@ const game = () => {
 
     updateScore();
 
-    ipickSec.style.display = "block";
-    ipickSec.style.position = "absolute";
-    ipickSec.style.left = "200px";
-    ipickSec.style.animationName = "ipick";
-    ipickSec.style.animationDelay = "0s";
-    ipickSec.style.animationDuration = "4s";
-
-    syspickSec.style.display = "block";
-    syspickSec.style.position = "absolute";
-    syspickSec.style.left = "860px";
-    syspickSec.style.animationName = "syspick";
-    syspickSec.style.animationDelay = "0s";
-    syspickSec.style.animationDuration = "4s";
+    ipicksyspick();
   });
 
   const lizardclicke = document.getElementById("lizardButton");
@@ -158,19 +138,7 @@ const game = () => {
 
     updateScore();
 
-    ipickSec.style.display = "block";
-    ipickSec.style.position = "absolute";
-    ipickSec.style.left = "200px";
-    ipickSec.style.animationName = "ipick";
-    ipickSec.style.animationDelay = "0s";
-    ipickSec.style.animationDuration = "4s";
-
-    syspickSec.style.display = "block";
-    syspickSec.style.position = "absolute";
-    syspickSec.style.left = "860px";
-    syspickSec.style.animationName = "syspick";
-    syspickSec.style.animationDelay = "0s";
-    syspickSec.style.animationDuration = "4s";
+    ipicksyspick();
   });
 
   const spockclicke = document.getElementById("spockButton");
@@ -192,19 +160,7 @@ const game = () => {
 
     updateScore();
 
-    ipickSec.style.display = "block";
-    ipickSec.style.position = "absolute";
-    ipickSec.style.left = "200px";
-    ipickSec.style.animationName = "ipick";
-    ipickSec.style.animationDelay = "0s";
-    ipickSec.style.animationDuration = "4s";
-
-    syspickSec.style.display = "block";
-    syspickSec.style.position = "absolute";
-    syspickSec.style.left = "860px";
-    syspickSec.style.animationName = "syspick";
-    syspickSec.style.animationDelay = "0s";
-    syspickSec.style.animationDuration = "4s";
+    ipicksyspick();
   });
   //end of user choices
 
@@ -290,30 +246,25 @@ const game = () => {
         "greaterDivForCongratulationsButtonandText"
       );
 
+      const scorehandler = () => {
+        sec2.style.display = "none";
+        youLose.style.display = "none";
+        youWin.style.display = "none";
+        ovals.style.display = "none";
+        scissorclick.style.display = "none";
+        paperclick.style.display = "none";
+        rockclick.style.display = "none";
+        spockclick.style.display = "none";
+        lizclick.style.display = "none";
+        appear.style.display = "none";
+      };
+
       if (score === 0) {
         restartGame.style.display = "block";
-        sec2.style.display = "none";
-        youLose.style.display = "none";
-        youWin.style.display = "none";
-        ovals.style.display = "none";
-        scissorclick.style.display = "none";
-        paperclick.style.display = "none";
-        rockclick.style.display = "none";
-        spockclick.style.display = "none";
-        lizclick.style.display = "none";
-        appear.style.display = "none";
+        scorehandler();
       } else if (score === 10) {
         congrat.style.display = "block";
-        sec2.style.display = "none";
-        youLose.style.display = "none";
-        youWin.style.display = "none";
-        ovals.style.display = "none";
-        scissorclick.style.display = "none";
-        paperclick.style.display = "none";
-        rockclick.style.display = "none";
-        spockclick.style.display = "none";
-        lizclick.style.display = "none";
-        appear.style.display = "none";
+        scorehandler();
       }
     }, 4000);
   };
@@ -326,6 +277,14 @@ const game = () => {
   const draww = document.querySelector("#greaterDivForDrawButtonandText");
 
   const compare = (userPick, computerPick) => {
+    const youwindisplay = () => {
+      youWin.style.display = "block";
+      ovals.style.display = "block";
+      ovals.style.position = "absolute";
+      ovals.style.left = "0";
+      score++;
+    };
+
     //draw
     if (userPick === computerPick) {
       draww.style.display = "block";
@@ -333,102 +292,51 @@ const game = () => {
       draww.style.animationDelay = "0s";
       draww.style.animationDuration = "4s";
       computerPick.style.display = "none";
-      // console.log('It is a tie!');
     }
 
     //scissor
     else if (userPick === scissorclick && computerPick === paperclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     } else if (userPick === scissorclick && computerPick === lizclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     }
 
     //paper
     else if (userPick === paperclick && computerPick === rockclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     } else if (userPick === paperclick && computerPick === spockclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     }
 
     //rockclick
     else if (userPick === rockclick && computerPick === lizclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     } else if (userPick === rockclick && computerPick === scissorclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     }
 
     //lizclick
     else if (userPick === lizclick && computerPick === spockclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     } else if (userPick === lizclick && computerPick === paperclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     }
 
     //spockclick
     else if (userPick === spockclick && computerPick === scissorclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     } else if (userPick === spockclick && computerPick === rockclick) {
-      youWin.style.display = "block";
-      ovals.style.display = "block";
-      ovals.style.position = "absolute";
-      ovals.style.left = "0";
-      // console.log('User Won');
+      youwindisplay();
       updateScore();
-      score++;
     }
 
     //default
@@ -438,14 +346,14 @@ const game = () => {
       ovals.style.position = "absolute";
       ovals.style.left = "660px";
       // console.log('Computer Won');
+      // let body = document.getElementsByTagName("body")[0];
+      // if ((body.style.width = "375px" && youLose.style.display)) {
+      //   appear.style.width = "250px";
+      //   ovals.style.left = "200px";
+      // }
       updateScore();
       score--;
     }
-
-    // let body = document.getElementsByTagName("body")[0];
-    // if ((body.style.width = "375px")) {
-    //   ovals.style.left = "200px";
-    // }
 
     // const boDy = document.querySelector('#body');
     // body responsiveness
@@ -456,46 +364,22 @@ const game = () => {
   //end of comparism
 
   //go back to the play buttons after the playAgain button is clicked
-  const playAgainLoseButton = document.querySelector(".playAgainL");
-  const playAgainWinButton = document.querySelector(".playAgainW");
-  const drawGame = document.querySelector("#DrawGAme");
+  const playAgainBtns = document.querySelectorAll(".playAgainBtn");
 
-  playAgainLoseButton.addEventListener("click", () => {
-    sec2.style.display = "block";
-    youLose.style.display = "none";
-    youWin.style.display = "none";
-    ovals.style.display = "none";
-    scissorclick.style.display = "none";
-    paperclick.style.display = "none";
-    rockclick.style.display = "none";
-    spockclick.style.display = "none";
-    lizclick.style.display = "none";
-    appear.style.display = "none";
-  });
-  playAgainWinButton.addEventListener("click", () => {
-    sec2.style.display = "block";
-    youLose.style.display = "none";
-    youWin.style.display = "none";
-    ovals.style.display = "none";
-    scissorclick.style.display = "none";
-    paperclick.style.display = "none";
-    rockclick.style.display = "none";
-    spockclick.style.display = "none";
-    lizclick.style.display = "none";
-    appear.style.display = "none";
-  });
-  drawGame.addEventListener("click", () => {
-    sec2.style.display = "block";
-    youLose.style.display = "none";
-    youWin.style.display = "none";
-    ovals.style.display = "none";
-    scissorclick.style.display = "none";
-    paperclick.style.display = "none";
-    rockclick.style.display = "none";
-    spockclick.style.display = "none";
-    lizclick.style.display = "none";
-    appear.style.display = "none";
-    draww.style.display = "none";
+  playAgainBtns.forEach((playAgainBtn) => {
+    playAgainBtn.addEventListener("click", () => {
+      sec2.style.display = "block";
+      youLose.style.display = "none";
+      youWin.style.display = "none";
+      ovals.style.display = "none";
+      scissorclick.style.display = "none";
+      paperclick.style.display = "none";
+      rockclick.style.display = "none";
+      spockclick.style.display = "none";
+      lizclick.style.display = "none";
+      appear.style.display = "none";
+      draww.style.display = "none";
+    });
   });
 };
 game();

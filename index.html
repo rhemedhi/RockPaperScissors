@@ -1,237 +1,263 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="This is a Rock Scissor Paper Spock Lizard app game that you will enjoy very much"
-  />
+      name="description"
+      content="This is a Rock Scissor Paper Spock Lizard app game that you will enjoy very much"
+    />
     <title>Rock Paper Scissors Spock Lizard</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="images/favicon-32x32.png" type="x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" href="images/favicon-32x32.png" type="x-icon" />
+  </head>
+  <body>
     <div id="divLogo-container">
-        <div id="div-logoBonus">
-            <img src="images/logo-bonus.svg" alt="rock paper scissor lizard spock logo" id="logoBonus">
-        </div>
-        <div id="scorebox">
-            <div id="scorename">SCORE</div> 
-            <div id="scorepoint">5</div> 
-        </div>
+      <div id="div-logoBonus">
+        <img
+          src="images/logo-bonus.svg"
+          alt="rock paper scissor lizard spock logo"
+          id="logoBonus"
+        />
+      </div>
+      <div id="scorebox">
+        <div id="scorename">SCORE</div>
+        <div id="scorepoint">5</div>
+      </div>
     </div>
 
     <div id="cover"></div>
 
     <!-- input button  -->
     <div id="section2">
-        <div>
-            <img src="images/bg-pentagon.svg" alt="pentagon symbol" id="pentagon">
-        </div>
+      <div>
+        <img src="images/bg-pentagon.svg" alt="pentagon symbol" id="pentagon" />
+      </div>
 
-        <div id="divScissorAppear">
-            <button id="scissorButton">
-                <div id="orangeCircle"></div>
-                <div id="yellowCircle"></div>
-                <div id="ashCircle"></div>
-                <div id="whiteCircle"></div>
-                <div id="scissor">
-                    <img src="images/icon-scissors.svg" alt="scissors symbol">
-                </div>
-            </button>
-        </div>
+      <div id="divScissorAppear">
+        <button id="scissorButton">
+          <div id="orangeCircle"></div>
+          <div id="yellowCircle"></div>
+          <div id="ashCircle"></div>
+          <div id="whiteCircle"></div>
+          <div class="scissor">
+            <img
+              src="images/icon-scissors.svg"
+              alt="scissors symbol"
+              class="scissor"
+            />
+          </div>
+        </button>
+      </div>
 
-        <div id="divPaperAppear">
-            <button id="paperButton">
-                <div id="deepBlueCircle"></div>
-                <div id="midBlueCircle"></div>
-                <div id="ashpaperCircle"></div>
-                <div id="whitepaperCircle"></div>
-                <div id="paper">
-                    <img src="images/icon-paper.svg" alt="paper symbol">
-                </div>
-            </button>
-        </div>
+      <div id="divPaperAppear">
+        <button id="paperButton">
+          <div id="deepBlueCircle"></div>
+          <div id="midBlueCircle"></div>
+          <div id="ashpaperCircle"></div>
+          <div id="whitepaperCircle"></div>
+          <div class="paper">
+            <img src="images/icon-paper.svg" alt="paper symbol" class="paper" />
+          </div>
+        </button>
+      </div>
 
-        <div id="divRockAppear">
-            <button id="rockButton">
-                <div id="deepRedCircle"></div>
-                <div id="middleRedCircle"></div>
-                <div id="ashRockCircle"></div>
-                <div id="whiteRockCircle"></div>
-                <div id="Rock">
-                    <img src="images/icon-rock.svg" alt="rock symbol">
-                </div>
-            </button>
-        </div>
+      <div id="divRockAppear">
+        <button id="rockButton">
+          <div id="deepRedCircle"></div>
+          <div id="middleRedCircle"></div>
+          <div id="ashRockCircle"></div>
+          <div id="whiteRockCircle"></div>
+          <div class="Rock">
+            <img src="images/icon-rock.svg" alt="rock symbol" class="Rock" />
+          </div>
+        </button>
+      </div>
 
-        <div id="divLizardAppear">
-            <button id="lizardButton">
-                <div id="deepVoiletCircle"></div>
-                <div id="lightVioletCircle"></div>
-                <div id="ashLizardCircle"></div>
-                <div id="whiteLizardCircle"></div>
-                <div id="Lizard">
-                    <img src="images/icon-lizard.svg" alt="lizard symbol">
-                </div>
-            </button>
-        </div>
+      <div id="divLizardAppear">
+        <button id="lizardButton">
+          <div id="deepVoiletCircle"></div>
+          <div id="lightVioletCircle"></div>
+          <div id="ashLizardCircle"></div>
+          <div id="whiteLizardCircle"></div>
+          <div class="Lizard">
+            <img
+              src="images/icon-lizard.svg"
+              alt="lizard symbol"
+              class="Lizard"
+            />
+          </div>
+        </button>
+      </div>
 
-        <div id="divSpockAppear">
-            <button id="spockButton">
-                <div id="deepSeaCircle"></div>
-                <div id="middleSeaCircle"></div>
-                <div id="ashSpockCircle"></div>
-                <div id="whiteSpockCircle"></div>
-                <div id="Spock">
-                    <img src="images/icon-spock.svg" alt="spock symbol">
-                </div>
-            </button>
-        </div> 
+      <div id="divSpockAppear">
+        <button id="spockButton">
+          <div id="deepSeaCircle"></div>
+          <div id="middleSeaCircle"></div>
+          <div id="ashSpockCircle"></div>
+          <div id="whiteSpockCircle"></div>
+          <div class="Spock">
+            <img src="images/icon-spock.svg" alt="spock symbol" class="Spock" />
+          </div>
+        </button>
+      </div>
     </div>
 
     <!-- result of input button  -->
     <div id="outPutResult">
-        <div id="scissorappear" class="userClick">
-            <div id="orangeOtherCircle"></div>
-            <div id="yellowOtherCircle"></div>
-            <div id="ashOtherCircle"></div>
-            <div id="whiteOtherCircle"></div>
-            <div id="scissorOther">
-                <img src="images/icon-scissorsext.svg" alt="scissors symbol" id="scissorOtherImage">
-            </div> 
+      <div id="scissorappear" class="userClick">
+        <div id="orangeOtherCircle"></div>
+        <div id="yellowOtherCircle"></div>
+        <div id="ashOtherCircle"></div>
+        <div id="whiteOtherCircle"></div>
+        <div id="scissorOther">
+          <img
+            src="images/icon-scissorsext.svg"
+            alt="scissors symbol"
+            id="scissorOtherImage"
+          />
         </div>
-        <div id="paperappear" class="userClick">
-            <div id="deepBlueOtherCircle"></div>
-            <div id="midBlueOtherCircle"></div>
-            <div id="ashpaperOtherCircle"></div>
-            <div id="whitepaperOtherCircle"></div>
-            <div id="paperOther">
-                <img src="images/icon-paper.svg" alt="paper symbol" id="paperOtherImage">
-            </div>
+      </div>
+      <div id="paperappear" class="userClick">
+        <div id="deepBlueOtherCircle"></div>
+        <div id="midBlueOtherCircle"></div>
+        <div id="ashpaperOtherCircle"></div>
+        <div id="whitepaperOtherCircle"></div>
+        <div id="paperOther">
+          <img
+            src="images/icon-paper.svg"
+            alt="paper symbol"
+            id="paperOtherImage"
+          />
         </div>
-        <div id="rockappear" class="userClick">
-            <div id="deepRedOtherCircle"></div>
-            <div id="middleRedOtherCircle"></div>
-            <div id="ashRockOtherCircle"></div>
-            <div id="whiteRockOtherCircle"></div>
-            <div id="RockOther">
-                <img src="images/icon-rock.svg" alt="rock symbol" id="rockOtherImages">
-            </div> 
+      </div>
+      <div id="rockappear" class="userClick">
+        <div id="deepRedOtherCircle"></div>
+        <div id="middleRedOtherCircle"></div>
+        <div id="ashRockOtherCircle"></div>
+        <div id="whiteRockOtherCircle"></div>
+        <div id="RockOther">
+          <img
+            src="images/icon-rock.svg"
+            alt="rock symbol"
+            id="rockOtherImages"
+          />
         </div>
-        <div id="lizardappear" class="userClick">
-            <div id="deepVoiletOtherCircle"></div>
-            <div id="lightVioletOtherCircle"></div>
-            <div id="ashLizardOtherCircle"></div>
-            <div id="whiteLizardOtherCircle"></div>
-            <div id="LizardOther">
-                <img src="images/icon-lizard.svg" alt="lizard symbol" id="lizardOtherImage">
-            </div> 
+      </div>
+      <div id="lizardappear" class="userClick">
+        <div id="deepVoiletOtherCircle"></div>
+        <div id="lightVioletOtherCircle"></div>
+        <div id="ashLizardOtherCircle"></div>
+        <div id="whiteLizardOtherCircle"></div>
+        <div id="LizardOther">
+          <img
+            src="images/icon-lizard.svg"
+            alt="lizard symbol"
+            id="lizardOtherImage"
+          />
         </div>
-        <div id="spockappear" class="userClick">
-            <div id="deepSeaOtherCircle"></div>
-            <div id="middleSeaOtherCircle"></div>
-            <div id="ashSpockOtherCircle"></div>
-            <div id="whiteSpockOtherCircle"></div>
-            <div id="SpockOther">
-                <img src="images/icon-spock.svg" alt="spock symbol" id="spockOtherImage">
-            </div> 
+      </div>
+      <div id="spockappear" class="userClick">
+        <div id="deepSeaOtherCircle"></div>
+        <div id="middleSeaOtherCircle"></div>
+        <div id="ashSpockOtherCircle"></div>
+        <div id="whiteSpockOtherCircle"></div>
+        <div id="SpockOther">
+          <img
+            src="images/icon-spock.svg"
+            alt="spock symbol"
+            id="spockOtherImage"
+          />
         </div>
+      </div>
     </div>
-
 
     <div id="moDal"></div>
     <div id="div-rules-display">
-        <div id="div-rules-textAndCloseButton">
-            <h3 id="textrules">RULES</h3>
-            <img src="images/icon-close.svg" alt="the close button" id="closeButton">
-        </div>
-        <div id="image-rules-bonus-itself">
-            <img src="images/image-rules-bonus.svg" alt="the bonus rules">
-        </div>
+      <div id="div-rules-textAndCloseButton">
+        <h3 id="textrules">RULES</h3>
+        <img
+          src="images/icon-close.svg"
+          alt="the close button"
+          id="closeButton"
+        />
+      </div>
+      <div id="image-rules-bonus-itself">
+        <img src="images/image-rules-bonus.svg" alt="the bonus rules" />
+      </div>
     </div>
-
 
     <div id="ipickAndTheSystemPickSection" name="pickAndPick">
-        <div id="divForyoupickedText">
-            <p id="youPickedText">YOU PICKED</p>
-            <div id="iPickedCircle"></div>
-        </div>
-        <div id="divFortheHousePickedText">
-            <P id="theHousePickedText">THE HOUSE PICKED</P>
-            <div id="theHousePickedCircle"></div>
-        </div>
+      <div id="divForyoupickedText">
+        <p id="youPickedText">YOU PICKED</p>
+        <div id="iPickedCircle"></div>
+      </div>
+      <div id="divFortheHousePickedText">
+        <p id="theHousePickedText">THE HOUSE PICKED</p>
+        <div id="theHousePickedCircle"></div>
+      </div>
     </div>
 
-
-    <button id="div-rules-button">
-        RULES
-    </button>
-
+    <button id="div-rules-button">RULES</button>
 
     <!-- <div id="divForLoser" class="fadeout"> -->
     <div id="divForLoser">
-        <div id="youLose">YOU LOSE</div>
-        <div id="loseButtonLike">
-            <button class="playAgainL">PLAY AGAIN</button>
-        </div>
+      <div id="youLose">YOU LOSE</div>
+      <div id="loseButtonLike">
+        <button class="playAgainL playAgainBtn">PLAY AGAIN</button>
+      </div>
     </div>
-
 
     <div id="divForWinner">
-        <div id="youWin">YOU WIN</div>
-        <div id="winButtonLike">
-            <button class="playAgainW">PLAY AGAIN</button> 
-        </div>
+      <div id="youWin">YOU WIN</div>
+      <div id="winButtonLike">
+        <button class="playAgainW playAgainBtn">PLAY AGAIN</button>
+      </div>
     </div>
-
 
     <!-- three ovals -->
     <div id="divForOvals">
-        <div id="ovalOne"></div>
-        <div id="ovalTwo"></div>
-        <div id="ovalThree"></div>
+      <div id="ovalOne"></div>
+      <div id="ovalTwo"></div>
+      <div id="ovalThree"></div>
     </div>
-
 
     <!-- You Lose and restart button -->
     <div id="greaterDivForRestartButtonandText">
-        <div id="divForRestartGame">
-            <div><p id="textIfYouLose">You lost the Game Play!!😢</p></div>
-            <div>
-                <button id="restartGame" onclick="window.location.reload()">Restart</button>
-            </div>
+      <div id="divForRestartGame">
+        <div><p id="textIfYouLose">You lost the Game Play!!😢</p></div>
+        <div>
+          <button id="restartGame" onclick="window.location.reload()">
+            Restart
+          </button>
         </div>
+      </div>
     </div>
-
 
     <!-- You won and Congratulations button -->
     <div id="greaterDivForCongratulationsButtonandText">
-        <div id="divForCongratGame">
-            <div><p id="textIfYouWin">You won the game!!</p></div>
-            <div>
-                <button id="CongratGAme" onclick="window.location.reload()">Restart</button>
-            </div>
+      <div id="divForCongratGame">
+        <div><p id="textIfYouWin">You won the game!!</p></div>
+        <div>
+          <button id="CongratGAme" onclick="window.location.reload()">
+            Restart
+          </button>
         </div>
+      </div>
     </div>
-
 
     <!-- Draw button -->
     <div id="greaterDivForDrawButtonandText">
-        <div id="divForDrawGame">
-            <div><p id="textIfYouDraw">Draw</p></div>
-            <div>
-                <button id="DrawGAme">Continue</button>
-            </div>
+      <div id="divForDrawGame">
+        <div><p id="textIfYouDraw">Draw</p></div>
+        <div>
+          <button id="DrawGAme" class="playAgainBtn">Continue</button>
         </div>
+      </div>
     </div>
 
-    <script>
-        
-        
-    </script>
+    <script></script>
     <script src="rockpssl.js"></script>
-</body>
+  </body>
 </html>
