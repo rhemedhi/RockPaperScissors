@@ -5,11 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap");
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   top: 0;
   left: 0;
-  height: 768px;
+  height: 100vh;
   position: absolute;
   background: radial-gradient(
     134.34% 134.34% at 50% 0%,
@@ -43,7 +43,7 @@ button {
   width: 700px;
   height: 150px;
   left: 333px;
-  top: 48px;
+  top: 10px;
 }
 #scorebox {
   position: absolute;
@@ -90,7 +90,7 @@ button {
   width: 345px;
   height: 345px;
   left: 511px;
-  top: 318px;
+  top: 268px;
 }
 
 /* design for scissors */
@@ -105,7 +105,7 @@ button {
   width: 145px;
   height: 148px;
   left: 611px;
-  top: 246px;
+  top: 196px;
   background: #c76c1b;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
@@ -114,7 +114,7 @@ button {
   width: 145px;
   height: 141.44px;
   left: 611px;
-  top: 246px;
+  top: 196px;
   background: #eb9f0e;
 }
 #ashCircle {
@@ -122,7 +122,7 @@ button {
   width: 111.31px;
   height: 110.82px;
   left: 627.84px;
-  top: 262.77px;
+  top: 212.77px;
   background: #babfd4;
 }
 #whiteCircle {
@@ -130,7 +130,7 @@ button {
   width: 111.31px;
   height: 104.99px;
   left: 627.84px;
-  top: 268.6px;
+  top: 218.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
 }
 .scissor {
@@ -138,7 +138,7 @@ button {
   width: 70px;
   height: 70px;
   left: 323.35px;
-  top: 141.1px;
+  top: 116.1px;
 }
 /* #scissor:hover {
     position: absolute;
@@ -162,7 +162,7 @@ button {
   width: 145px;
   height: 148px;
   left: 774px;
-  top: 375px;
+  top: 325px;
   background: #2a45c2;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
@@ -171,7 +171,7 @@ button {
   width: 145px;
   height: 141.44px;
   left: 774px;
-  top: 375px;
+  top: 325px;
   background: #4664f4;
 }
 #ashpaperCircle {
@@ -179,7 +179,7 @@ button {
   width: 111.31px;
   height: 110.82px;
   left: 790.84px;
-  top: 391.77px;
+  top: 341.77px;
   background: #babfd4;
 }
 #whitepaperCircle {
@@ -187,7 +187,7 @@ button {
   width: 111.31px;
   height: 104.99px;
   left: 790.84px;
-  top: 397.6px;
+  top: 347.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
 }
 .paper {
@@ -195,7 +195,7 @@ button {
   width: 54px;
   height: 63px;
   left: 407.4px;
-  top: 207.74px;
+  top: 182.74px;
 }
 
 /* design for rock */
@@ -210,7 +210,7 @@ button {
   width: 145px;
   height: 148px;
   left: 709px;
-  top: 561px;
+  top: 511px;
   background: #9d1634;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
@@ -219,7 +219,7 @@ button {
   width: 145px;
   height: 141.44px;
   left: 709px;
-  top: 561px;
+  top: 511px;
   background: #db2e4d;
 }
 #ashRockCircle {
@@ -227,7 +227,7 @@ button {
   width: 111.31px;
   height: 110.82px;
   left: 725.84px;
-  top: 577.77px;
+  top: 527.77px;
   background: #babfd4;
 }
 #whiteRockCircle {
@@ -235,7 +235,7 @@ button {
   width: 111.31px;
   height: 104.99px;
   left: 725.84px;
-  top: 583.6px;
+  top: 533.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
 }
 .Rock {
@@ -243,7 +243,7 @@ button {
   width: 55px;
   height: 55px;
   left: 375.67px;
-  top: 304.39px;
+  top: 280.39px;
 }
 
 /* design for lizard */
@@ -258,7 +258,7 @@ button {
   width: 145px;
   height: 148px;
   left: 512px;
-  top: 561px;
+  top: 511px;
   background: #5f37a8;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
@@ -267,7 +267,7 @@ button {
   width: 145px;
   height: 141.44px;
   left: 512px;
-  top: 561px;
+  top: 511px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.0966455) 0%,
@@ -279,7 +279,7 @@ button {
   width: 111.31px;
   height: 110.82px;
   left: 528.84px;
-  top: 577.77px;
+  top: 527.77px;
   background: #babfd4;
 }
 #whiteLizardCircle {
@@ -287,7 +287,7 @@ button {
   width: 111.31px;
   height: 104.99px;
   left: 528.84px;
-  top: 583.6px;
+  top: 533.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
 }
 .Lizard {
@@ -295,7 +295,7 @@ button {
   width: 61.52px;
   height: 59.78px;
   left: 276.74px;
-  top: 300.2px;
+  top: 278.2px;
 }
 
 /* design for spock */
@@ -310,7 +310,7 @@ button {
   width: 145px;
   height: 148px;
   left: 447px;
-  top: 375px;
+  top: 325px;
   background: #2d8dab;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
@@ -319,7 +319,7 @@ button {
   width: 145px;
   height: 141.44px;
   left: 447px;
-  top: 375px;
+  top: 325px;
   background: #3fb7cd;
 }
 #ashSpockCircle {
@@ -327,7 +327,7 @@ button {
   width: 111.31px;
   height: 110.82px;
   left: 463.84px;
-  top: 391.77px;
+  top: 341.77px;
   background: #babfd4;
 }
 #whiteSpockCircle {
@@ -335,7 +335,7 @@ button {
   width: 111.31px;
   height: 104.99px;
   left: 463.84px;
-  top: 397.6px;
+  top: 347.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
 }
 .Spock {
@@ -343,7 +343,7 @@ button {
   width: 44px;
   height: 59px;
   left: 249.46px;
-  top: 209.47px;
+  top: 184.47px;
 }
 
 /* rules display and opacity */
@@ -355,7 +355,7 @@ button {
   width: 128px;
   height: 40px;
   left: 1206px;
-  top: 696px;
+  top: 615px;
   border: solid 1px #ffffff;
   border-radius: 10px;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -393,6 +393,12 @@ button {
   mix-blend-mode: normal;
   opacity: 0.25;
   cursor: pointer;
+}
+#closeButton:hover {
+  border: solid 3px rgb(230, 124, 124);
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s;
 }
 #textrules {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -517,8 +523,7 @@ button {
 #youPickedText,
 #theHousePickedText {
   text-align: center;
-  margin-left: 25px;
-  margin-right: -10px;
+  margin: 0px -10px 0px 25px;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -561,7 +566,7 @@ button {
   width: 292.61px;
   height: 300px;
   left: 350px;
-  top: 385px;
+  top: 345px;
   background: #c76c1b;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 50%;
@@ -572,7 +577,7 @@ button {
   width: 292.61px;
   height: 286.7px;
   left: 349px;
-  top: 385px;
+  top: 345px;
   background: #eb9f0e;
   border-radius: 50%;
   z-index: 2;
@@ -582,7 +587,7 @@ button {
   width: 224.63px;
   height: 224.63px;
   left: 381.99px;
-  top: 418.99px;
+  top: 378.99px;
   background: #babfd4;
   border-radius: 50%;
   z-index: 3;
@@ -592,7 +597,7 @@ button {
   width: 225px;
   height: 213px;
   left: 380.84px;
-  top: 430.6px;
+  top: 390.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   z-index: 4;
@@ -602,7 +607,7 @@ button {
   width: 79.9px;
   height: 118.23px;
   left: 466.35px;
-  top: 496.1px;
+  top: 456.1px;
   z-index: 5;
 }
 /* #scissorOtherImage {
@@ -615,7 +620,7 @@ button {
   width: 292.61px;
   height: 300px;
   left: 350px;
-  top: 385px;
+  top: 345px;
   background: #2a45c2;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 50%;
@@ -626,7 +631,7 @@ button {
   width: 292.61px;
   height: 286.7px;
   left: 349px;
-  top: 385px;
+  top: 345px;
   background: #4664f4;
   border-radius: 50%;
   z-index: 2;
@@ -636,7 +641,7 @@ button {
   width: 224.63px;
   height: 224.63px;
   left: 381.99px;
-  top: 418.99px;
+  top: 378.99px;
   background: #babfd4;
   border-radius: 50%;
   z-index: 3;
@@ -646,7 +651,7 @@ button {
   width: 225px;
   height: 213px;
   left: 380.84px;
-  top: 430.6px;
+  top: 390.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   z-index: 4;
@@ -656,7 +661,7 @@ button {
   width: 79.9px;
   height: 118.23px;
   left: 466.35px;
-  top: 496.1px;
+  top: 456.1px;
   z-index: 5;
 }
 /* #paperOtherImage {
@@ -668,7 +673,7 @@ button {
   width: 292.61px;
   height: 300px;
   left: 350px;
-  top: 385px;
+  top: 345px;
   background: #9d1634;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 50%;
@@ -679,7 +684,7 @@ button {
   width: 292.61px;
   height: 286.7px;
   left: 349px;
-  top: 385px;
+  top: 345px;
   background: #db2e4d;
   border-radius: 50%;
   z-index: 2;
@@ -689,7 +694,7 @@ button {
   width: 224.63px;
   height: 224.63px;
   left: 381.99px;
-  top: 418.99px;
+  top: 378.99px;
   background: #babfd4;
   border-radius: 50%;
   z-index: 3;
@@ -699,7 +704,7 @@ button {
   width: 225px;
   height: 213px;
   left: 380.84px;
-  top: 430.6px;
+  top: 390.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   z-index: 4;
@@ -709,7 +714,7 @@ button {
   width: 79.9px;
   height: 118.23px;
   left: 466.35px;
-  top: 496.1px;
+  top: 456.1px;
   z-index: 5;
 }
 /* #rockOtherImages {
@@ -721,7 +726,7 @@ button {
   width: 292.61px;
   height: 300px;
   left: 350px;
-  top: 385px;
+  top: 345px;
   background: #5f37a8;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 50%;
@@ -732,7 +737,7 @@ button {
   width: 292.61px;
   height: 286.7px;
   left: 349px;
-  top: 385px;
+  top: 345px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.0966455) 0%,
@@ -746,7 +751,7 @@ button {
   width: 224.63px;
   height: 224.63px;
   left: 381.99px;
-  top: 418.99px;
+  top: 378.99px;
   background: #babfd4;
   border-radius: 50%;
   z-index: 3;
@@ -756,7 +761,7 @@ button {
   width: 225px;
   height: 213px;
   left: 380.84px;
-  top: 430.6px;
+  top: 390.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   z-index: 4;
@@ -766,7 +771,7 @@ button {
   width: 79.9px;
   height: 118.23px;
   left: 466.35px;
-  top: 496.1px;
+  top: 456.1px;
   z-index: 5;
 }
 /* #lizardOtherImage {
@@ -778,7 +783,7 @@ button {
   width: 292.61px;
   height: 300px;
   left: 350px;
-  top: 385px;
+  top: 345px;
   background: #2d8dab;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 50%;
@@ -789,7 +794,7 @@ button {
   width: 292.61px;
   height: 286.7px;
   left: 349px;
-  top: 385px;
+  top: 345px;
   background: #3fb7cd;
   border-radius: 50%;
   z-index: 2;
@@ -799,7 +804,7 @@ button {
   width: 224.63px;
   height: 224.63px;
   left: 381.99px;
-  top: 418.99px;
+  top: 378.99px;
   background: #babfd4;
   border-radius: 50%;
   z-index: 3;
@@ -809,7 +814,7 @@ button {
   width: 225px;
   height: 213px;
   left: 380.84px;
-  top: 430.6px;
+  top: 390.6px;
   background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
   border-radius: 50%;
   z-index: 4;
@@ -819,7 +824,7 @@ button {
   width: 79.9px;
   height: 118.23px;
   left: 466.35px;
-  top: 496.1px;
+  top: 456.1px;
   z-index: 5;
 }
 /* #spockOtherImage {
@@ -886,7 +891,7 @@ button {
   height: 718px;
   position: absolute;
   left: 660px;
-  top: 174.35px;
+  top: 130.35px;
   mix-blend-mode: normal;
   opacity: 0.5;
   z-index: 1;
@@ -1238,7 +1243,8 @@ button {
     color: #565468;
   }
   #section2 {
-    display: block; /*later change it ==================================================================*/
+    display: none;
+    /*later change it ==================================================================*/
   }
   #pentagon {
     box-sizing: border-box;
