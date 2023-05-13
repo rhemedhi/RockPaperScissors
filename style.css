@@ -1184,7 +1184,7 @@ button {
     height: 750px;
     left: 0px;
     top: 0px;
-    overflow-x: hidden;
+    overflow: auto;
   }
   #cover {
     width: 30px;
@@ -1243,7 +1243,7 @@ button {
     color: #565468;
   }
   #section2 {
-    display: none;
+    display: block;
     /*later change it ==================================================================*/
   }
   #pentagon {
