@@ -381,5 +381,13 @@ const game = () => {
       draww.style.display = "none";
     });
   });
+
+  // alert user to play on laptop
+  window.onload = function tellUserToPlayOnLaptop () {
+    const widthOfPage = window.innerWidth;
+    if (widthOfPage <= 426) {
+      alert('I am fixing the mobile version, Kindly play on your laptop for now.');
+    }
+  }
 };
 game();

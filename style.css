@@ -1166,6 +1166,10 @@ button {
     /* top: 0px; */
   }
 }
+
+.playOnYourLaptop {
+  display: none;
+}
 /* #iPickedCircle, #theHousePickedCircle {
     animation-name: appearCircle;
     animation-duration: 0.2s;
@@ -1177,6 +1181,18 @@ button {
 } */
 
 /* Media Query for mobile phone */
+@media screen and (max-width: 426px) {
+  #divLogo-container, #section2, #div-rules-button{
+    display: none;
+  }
+  .playOnYourLaptop {
+    display: flex;
+    margin: 300px auto 0px auto;
+    width: 70vw;
+    color: #000000;
+    font-size: clamp(10px, 10vw, 48px);
+  }
+}
 @media (max-width: 375px) {
   body {
     position: absolute;
@@ -1243,7 +1259,7 @@ button {
     color: #565468;
   }
   #section2 {
-    display: block;
+    display: none;
     /*later change it ==================================================================*/
   }
   #pentagon {
